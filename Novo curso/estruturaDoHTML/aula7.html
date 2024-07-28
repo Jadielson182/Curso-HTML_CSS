@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pensando em HTML</title>
+    <style>
+        #div1 {
+            background-color: red;
+            width: 180px;
+            height: 120px;
+        }
+        #divInterna1 {
+            width: 60px;
+            height: 60px;
+            background-color: blue;
+            float: left;
+        }
+        #divInterna2 {
+            width: 60px;
+            height: 60px;
+            background-color: yellow;
+            float: left;
+        }
+        #divInterna3 {
+            width: 60px;
+            height: 60px;
+            background-color: brown;
+            float: left;
+        }
+        #divInterna4 {
+            width: 120px;
+            height: 60px;
+            background-color: purple;
+            float: left;
+        }
+        #divInterna5 {
+            width: 60px;
+            height: 60px;
+            background-color: turquoise;
+            float: left;
+        }
+        #paragrafo {
+            text-align: center;
+            color: white;
+        }
+
+
+    </style>
 </head>
 <body>
+    <div id="div1">
+        <div id="divInterna1"></div>
+        <div id="divInterna2"></div>
+        <div id="divInterna3"></div>
+        <div id="divInterna4"> <p id="paragrafo">Qualquer coisa</p></div>
+        <div id="divInterna5"></div>
+
+
+    </div>
     
 </body>
 </html>
