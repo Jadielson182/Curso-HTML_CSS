@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            cursor: pointer;
+            /* display: block; */
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank " autocomplete="on"></form>
+    <section>
+        <h1> Cabeça</h1>
+        <p>O formulário</p>
+
+        <fieldset>
+            <legend>Descrição</legend>
+            <p>
+                <label >
+                    Nome:
+                    <input type="text" name="" id="" placeholder="Seu Nome " required>
+
+                </label>
+            </p>
+            
+            <p>
+                <label for="inome">Sobrenome: </label>
+                <input type="text" name="nome" id="inome" placeholder="Seu Sobrenome" required>
+            </p>
+            <p>
+                <label for="idev1">Sou um dev 1</label>
+                <input type="checkbox" name="dev" id="idev" value="sim">
+                <label for="idev2">Sou um dev 2</label>
+                <input type="checkbox" name="dev" id="idev2" value="sim">
+                <label for="idev3">Sou um dev 3</label>
+                <input type="checkbox" name="dev" id="idev3" value="sim">
+            </p>
+            
+            <p>Gênero: <br>
+                <label for="isim">Masculino</label>
+                <input type="radio" name="dev" id="isim" value="Masculino">
+                <label for="idev2">Feminino</label>
+                <input type="radio" name="dev" id="isim" value="Feminino">
+                <label for="idev3">Boyceta</label>
+                <input type="radio" name="dev" id="isim" value="Boyceta">
+
+            </p>
+            <p>
+                <label for="idatetime">Date</label>
+                <input type="date" name="datetime" id="idatetime" value="2020-04-20">
+            </p>
+            <p>
+                <label for="idate">Date</label>
+                <input type="datetime" name="date" id="idate" value="2020-04-20T20:00">
+            </p>
+            <p>
+                <label for="itime">Time</label>
+                <input type="time" name="timw" id="itime" value="20:00:10">
+            </p>
+            <p>
+                <label for="icor">Cor</label>
+                <input type="color" name="Cor" id="icor" value="#00FF00">
+            </p>
+
+            <p>
+                <label for="iemail">e-mail</label>
+                <input type="email" name="email" id="iemail" placeholder="ex.: email@email.com">
+            </p>
+            <p>
+                <label for="ifile">Sua Foto</label>
+                <input type="file" name="file" id="ifile" accept=".png, .svg, image/*" multiple>
+            </p>
+            <p>
+                <label for="inumber">Number</label>
+                <input type="number" name="number" id="inumber" placeholder="Digite um número" min="5" max="20" step="2">
+            </p>
+            <p>
+                <label for="isenha">Sua senha</label>
+                <input type="password" name="senha" id="isenha" placeholder="Digite sua senha">
+            </p>
+            <p>
+                <label for="irange">range</label>
+                <input type="range" name="range" id="irange" list="tickmarks">
+
+                <datalist id="tickmarks">
+                    <option value="0" label="0%"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50" label="50%"></option>
+                    <option value="100" label="100%"></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="iurl">Sua url</label>
+                <input type="url" name="url" id="iurl" placeholder="URL">
+            </p>
+            <p>
+                <label for="isearch">Busca</label>
+                <input type="search" name="search" id="isearch" placeholder="search">
+            </p>
+            <p>
+                <label for="iselect">Selecione alguma opção:</label>
+                <select name="select" id="iselect" multiple>
+                    <optgroup label="Teste 1">
+                        <option value="qualquer 1" label="label 1"></option>
+                        <option value="qualquer 2" label="label 2" disabled></option>
+                        <option value="qualquer 3" label="label 3" selected></option>
+                        <option value="qualquer 4" label="label 4"></option>
+                    </optgroup>
+                    <optgroup label="Teste 2">
+                        <option value="qualquer 1" label="label 1"></option>
+                        <option value="qualquer 2" label="label 2" ></option>
+                        <option value="qualquer 3" label="label 3" selected></option>
+                        <option value="qualquer 4" label="label 4"></option>
+                    </optgroup>
+                    <optgroup label="Teste 3">
+                        <option value="uma coisa 1" label="label 1"></option>
+                        <option value="umsa coisa2" label="label 2" ></option>
+                        <option value="uma coisa3" label="label 3" selected></option>
+                        <option value="uma coisa 4" label="label 4"></option>
+                    </optgroup>
+
+                </select>
+                <p>
+                    <label for="itesxtarea">Text area</label>
+                    <textarea name="textarea" id="itesxtarea" rows="20" cols="40" placeholder="Deixei seu comentario"></textarea>
+              
+                </p>
+
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reset">
+            </p>
+        </fieldset>
+    </section>
+    
+    
+</body>
+</html>
