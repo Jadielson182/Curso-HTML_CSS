@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aula15.css">
+    <style>
+        /* .caixa {
+            background: red;
+            height: 120px;
+            width: 120px;
+        } */
+        .caixa {
+            color: brown;
+
+        }
+        .caixa .n123{
+            color: blue;
+
+        }
+        .caixa .n456 {
+            color: aqua;
+        }
+        .caixa .n789 {
+            color: rgb(151, 151, 19);
+        }
+        .n123, .n789,.n456 {
+            background-color: chartreuse;
+            margin: 10px;
+            padding: 10px;
+        }
+        .caixa > p {
+            color: red;
+        }
+        div {
+            color: initial;  
+        }
+        .pai {
+            color: red;
+        }
+        .pai .filha {
+            /* background-color: aqua; */
+            /* margin: 10px; */
+            
+        }
+        .filha {
+            background-color: blue;
+        }
+        .pai  .filha2 {
+            background-color: aqua;
+            
+
+           
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="pai">
+        pai
+        <div class="filha">
+            filha
+            <div class="filha2">
+                filha da filha
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="caixa">CSS
+        <h1 class="n123">lorem</h1>
+        <h2 class="n456">lorem</h2>
+        <h3 class="n789">lorem</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem alias nisi omnis reprehenderit optio fugit. Voluptatibus, delectus ullam? Repudiandae, officiis deleniti. Similique quo obcaecati provident quasi eaque rem voluptates! Error.</p>
+    </div>
+    
+</body>
+</html>
