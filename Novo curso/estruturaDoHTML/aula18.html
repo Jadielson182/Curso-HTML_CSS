@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="aula17.css"> -->
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    }
+
+    .pai h1 + p {
+        color: red;
+    }
+    .pai p + h1 {
+        color: chartreuse;
+    }
+    [meu-atributo~=valor1] {
+        color: blue;
+    }
+    [meu-atributo~=valor2] {
+        background-color: brown;
+    }
+    /* posso usar ^= para selecionar atributo o ^ seleciona se o att no html tiver o que tem no ^, exemplo meu-atributo^=com, se o att do htm tiver com tambem, a conf vai ser usada,  tambem temos o | (sinal pipe ) o att no html deve seer seguido de um - (traço),  
+    ex: meu-atributo|=valor, no html deve ta valor- no começo, tambem temos o $ ex: meu-atributo$=ll, o att no hml deve termina com ll */
+
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" checked>
+    <input type="checkbox" >
+    <h1 class="heading" meu-atributo="valor1 valor2 valor3">Lorem</h1>
+    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis aspernatur consectetur sunt rerum quo ipsa dolorum. Dolor incidunt aut nam, unde beatae ad perferendis pariatur illo tempore ullam maiores similique.</p>
+     
+    <p class="p" meu-atributo >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis aspernatur consectetur sunt rerum quo ipsa dolorum. Dolor incidunt aut nam, unde beatae ad perferendis pariatur illo tempore ullam maiores similique.</p>
+</body>
+</html> 
