@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classe :not</title>
+    <style>
+        input:checked + p {
+            background-color: red;
+        }
+        input:not(:checked) + p {
+            background-color: yellow;
+        }
+        p:not(.meio) {
+            color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae deleniti, nostrum blanditiis, autem rerum pariatur eos suscipit quidem exercitationem corporis placeat maiores ad aliquam quibusdam provident? Dolores blanditiis magnam facilis.</p>
+    <p class="meio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae deleniti, nostrum blanditiis, autem rerum pariatur eos suscipit quidem exercitationem corporis placeat maiores ad aliquam quibusdam provident? Dolores blanditiis magnam facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae deleniti, nostrum blanditiis, autem rerum pariatur eos suscipit quidem exercitationem corporis placeat maiores ad aliquam quibusdam provident? Dolores blanditiis magnam facilis.</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elements</title>
+    <style>
+        /* ul li::after {
+            content: '-';
+            background-color: red;
+            color: white;
+            display: block;
+        } */
+        ul li::before {
+            content: '-';
+            background-color: red;
+            color: white;
+            display: block;
+        }
+        p::first-letter {
+            font-size: 100px;
+            display: block;
+            float: left;
+            margin: 0 10px 10px 0;
+        }
+        p {
+            font-size: 24px;
+        }
+        p::first-line {
+            background-color: blueviolet;
+
+        }
+        p::selection {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi dolore molestias libero eius sunt eos, adipisci distinctio iste, alias omnis nihil temporibus laborum sed ducimus atque aspernatur iure placeat?</p>
+    
+</body>
+</html>
