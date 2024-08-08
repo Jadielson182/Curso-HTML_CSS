@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .menu > a {
+            font-size: 16px;
+            padding-right: 20px;
+        }
+        .pai {
+            width: 100vw;
+            height: 100vh;
+            background-color: yellow;
+        }
+        .pai > div {
+            width: 50%;
+            height: 50rem;
+            background-color: blue;
+        }
+        p {
+            font-size: 2vmax; /*vmax e % do tamanho do maior lado da viewport , vmin e a % do tamanho do menor lado da viewport */
+            /* font-size: 1.6rem; */
+         }
+        .color-one {
+            background: turquoise;
+            width: 100vw;
+            height: 100vh;
+        }
+        .color-two {
+            background: violet;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <a href="#one">One</a>
+        <a href="#two">Two</a>
+        <a href="#three">Three</a>
+    </nav>
+    <div class="pai" id="one">
+        <br>
+        <div ></div>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi temporibus voluptatibus nam repellendus beatae mollitia, eligendi laborum fugiat quam. A exercitationem facilis, quidem quibusdam sit nihil alias odio nobis in.</p>
+    </div>
+    <div class="pai color-one" id="two">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi temporibus voluptatibus nam repellendus beatae mollitia, eligendi laborum fugiat quam. A exercitationem facilis, quidem quibusdam sit nihil alias odio nobis in.</p>
+    </div>
+    <div class="pai color-two" id="three">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi temporibus voluptatibus nam repellendus beatae mollitia, eligendi laborum fugiat quam. A exercitationem facilis, quidem quibusdam sit nihil alias odio nobis in.</p>
+    </div>
+    
+</body>
+</html>
