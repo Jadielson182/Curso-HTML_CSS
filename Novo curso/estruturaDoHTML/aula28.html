@@ -8,11 +8,45 @@
         * {
             margin: 0px;
         }
-        .filha1, .filha2 {
+        .pai {
+            height: 300vh;
+        }
+        .filha1, .filha2, .filha3 {
             width: 300px;
             background-color: red;
             height: 300px;
+            position: static;
             margin: 10px;
+        }
+        
+        .filha2 {
+            background: yellowgreen;
+            /* z-index: -1; */
+            position: fixed;
+            top: 30%;
+            right: 0;
+            z-index: 1;
+        }
+        /* .filha1 {
+          
+
+        } */
+        .filha3 {
+            background-color: blue;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .outra {
+            position: absolute;
+            font-size: 50px;
+            background: white;
+            top: 50px;
+            left: 50px;
+        }
+        ul {
+            height: 100PX;
+            overflow-y: auto;
         }
     </style>
 </head>
@@ -20,6 +54,15 @@
     <div class="pai">
         <div class="filha1"></div>
         <div class="filha2"></div>
+        <div class="filha3">
+            <div class="outra">123</div>
+
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laboriosam ab, consequuntur numquam sunt nobis, sequi magni mollitia commodi saepe aperiam omnis nesciunt nihil qui quas unde modi perspiciatis autem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laboriosam ab, consequuntur numquam sunt nobis, sequi magni mollitia commodi saepe aperiam omnis nesciunt nihil qui quas unde modi perspiciatis autem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laboriosam ab, consequuntur numquam sunt nobis, sequi magni mollitia commodi saepe aperiam omnis nesciunt nihil qui quas unde modi perspiciatis autem?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laboriosam ab, consequuntur numquam sunt nobis, sequi magni mollitia commodi saepe aperiam omnis nesciunt nihil qui quas unde modi perspiciatis autem?</p>
     </div>
     
 </body>
