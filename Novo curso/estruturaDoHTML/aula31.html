@@ -9,28 +9,42 @@
             margin: 0px;
             padding: 0px;
             font-family: Arial, Helvetica, sans-serif;
-        }
+        }   
         
         menu> ul {
-            background-color: rgb(226, 43, 43);
+            /* background-color: rgba(11, 77, 221, 0.808); */
             position: fixed;
-            width: 100%;
+            width: 30%;
+            height: 35px;
+            border-radius: 10px;
+            padding-left: 150px;
         }
         menu> ul >  li{
             display: inline;
-            color: rgb(25, 0, 255);
             text-decoration: none;
         }
         menu> ul > li  > a {
             text-decoration: none;
-            padding: 0px 20px 0px 0px;
+            padding: 20px 20px 20px 5px;
+            color: black;
+        }
+        menu> ul > li  > a:hover {
+            background-color: rgba(0, 255, 255, 0.384);
+            border-radius: 10px;
+        }
+        #main {
+            background-color: rgb(206, 171, 238);
+            
         }
         
 
-        div.pagina-principal {
-            width: 100vw;
-            height: 100vh;
-            background-color: blueviolet;
+        .pagina-principal {
+            padding-top: 30px;
+            width: 70vw;
+            height: 600px;
+            background-color: white;
+            margin: auto;
+
         }
         .pagina-secundaria {
             width: 100vw;
@@ -41,6 +55,10 @@
             background-color: brown;
             text-align: center;
             padding: 20px;
+        }
+        .titulo {
+            text-align: center;
+            padding: 10px 0px;
         }
 
 
@@ -56,14 +74,14 @@
             </ul>
        </menu>
    </header>
-   <main>
+   <main id="main">
     <div class="pagina-principal " id="Home"> 
-        <h1> Lore Lore</h1>
+        <h1 class="titulo"> Lore Lore</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias mollitia, fuga accusantium officia asperiores perspiciatis velit deleniti eum aliquam enim recusandae, esse, unde optio! Est sed quia exercitationem libero unde! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit laudantium nisi, quae hic eos consequuntur placeat dolor, expedita rerum, vel atque magnam enim. Aperiam est aspernatur optio maxime beatae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quisquam aperiam tenetur vitae, rem eligendi quam molestias distinctio, alias, dolor ab iste nesciunt voluptate nam nostrum voluptates sequi voluptas cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero amet magnam, laboriosam id assumenda libero, delectus, quod maiores odit aspernatur facere ducimus praesentium! Ratione repellat, veritatis minima facilis sapiente quibusdam!</p>
 
     </div>
     <div class="pagina-secundaria" id="conteudo">
-        <h2> Loren Lorem</h2>
+        <h2 class="titulo"> Loren Lorem</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad exercitationem similique, eligendi, odit rem quae tenetur voluptates inventore, porro corporis sequi! Quas facere illum cum voluptatibus esse quasi consequuntur non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In veritatis assumenda, cum sed asperiores hic molestiae inventore. Doloremque debitis maiores recusandae. Mollitia consequuntur eveniet, doloribus quis laborum provident cum. Ad. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere voluptas a dolorem, exercitationem quae dolorum assumenda dolor deserunt corporis vitae omnis laborum recusandae nisi. Culpa officiis dolorem aut quas nam.</p>
     </div>
     
