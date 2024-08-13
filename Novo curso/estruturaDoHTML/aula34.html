@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+    <style>
+        .grid2 .col {
+            width: 200px;
+            height: 200px;
+            background: red;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+            /* border-radius: 50%; */
+            /* box-shadow: 10px 5px 3px 3px black; */
+            /* box-shadow: -10px -5px 3px 3px black; */
+            /* box-shadow:inset -10px -5px 3px 3px black; */
+            box-shadow:inset -10px -5px 3px 3px black, 10px 5px 3px 3px black;  ;
+             /* primeiro das laterais, segundo da vertical, terceiro e glow(um tipo de sombra) e o quarto espalhamento */
+            /*os negativos mudam a direçao e inset faz a sombra dentro do elemento, tambem pode usar  varias conf de sombras diferentes separados por virgula, */
+
+        }
+       
+        .grid2 .col .col-content {
+            text-align: center;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="grid1">
+        <div class="grid2">
+            <div class="col">
+                <div class="col-content">
+                Conteudo
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-content">
+                Conteudo
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-content">
+                Conteudo
+                </div>
+            </div>
+            <div class="col">
+                <div class="col-content">
+                Conteudo
+                </div>
+            </div>
+           
+    </div>
+</body>
+</html>
