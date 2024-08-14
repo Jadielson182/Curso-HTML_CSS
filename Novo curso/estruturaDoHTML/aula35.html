@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .flex-conteiner {
+            background-color: yellow;
+            height: 500px;
+            width: 960px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* baseline alinha atraves da linha da fonte*/
+            justify-content: center;
+        }
+        .flex-item {
+            color: white;
+            margin: 10px;
+            background-color: red;
+
+        }
+        .flex-item:nth-child(3) {
+            font-size: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex-conteiner">
+        <div class="flex-item">Um</div>
+        <div class="flex-item">Dois</div>
+        <div class="flex-item">Três</div>
+        <div class="flex-item">Quatro</div>
+        <div class="flex-item">Cinco</div>
+
+    </div>
+    
+</body>
+</html>
