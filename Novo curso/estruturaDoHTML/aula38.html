@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+        }
+ 
+
+        
+        .two-columns {
+            display: flex;
+        }
+        .two-columns .col {
+            display: flex;
+            flex-direction: column;
+            background-color: greenyellow;
+            margin: 15px;
+            padding: 30px;
+        }
+        .galeria {
+            display: flex;
+            flex-flow:row wrap ;
+        }
+        
+        .galeria .img {
+            flex: 1 0 20%;
+            height: 50px;
+            background-color: blue;
+            margin: 10px;
+
+        }
+       
+
+      
+    </style>
+</head>
+<body>
+    <div class="two-columns">
+        <div class="col"> 
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum tempore aspernatur officia quia aperiam quos perspiciatis! Quo necessitatibus impedit quis dolore sit repudiandae corporis ea voluptatum? Tempore culpa saepe eius!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab dicta necessitatibus provident quod dolores, officia minima amet. Labore aperiam et, atque rem blanditiis porro, consequatur nihil culpa sunt iste voluptates! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus hic quaerat provident, quae minima officiis corrupti alias, iure repellendus eveniet ad dolore enim tempore ea nam distinctio. Natus, eos facilis!</p>
+        </div>
+        <div class="col"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempore sequi accusamus consectetur eum sunt iste reiciendis dolor vero? Explicabo, placeat. Doloremque necessitatibus atque omnis officiis veritatis, ipsam eligendi quia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias atque unde illum fugiat maiores. Adipisci delectus ea tempora? Eos earum quasi reprehenderit exercitationem impedit sapiente quia sint doloremque, officiis omnis! </p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laboriosam, placeat eum dolores provident rem et minima voluptates maiores saepe dicta, atque blanditiis itaque fugiat porro ea, sed quia deleniti!</p>
+            <div class="galeria">
+                <div class="img"></div>
+                <div class="img"></div>    
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+        </div>     
+    </div>
+</body>
+</html>
