@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet Abbreviation</title>
+</head>
+<body>
+    <!-- div.classe-um.classe-dois -->
+    <div class="classe-um classe-dois">Conteudo</div>
+
+    <!-- div#meu-id -->
+    <div id="meu-id">conteudo</div>
+
+    <!-- div#meu-id.minha-classe.outra-classe -->
+    <div id="meu-id" class="minha-classe outra-classe">conteudo</div>
+
+    <!-- div#meu-id.minha-classe.outra-classe{conteudo} -->
+    <div id="meu-id" class="minha-classe outra-classe">conteudo</div>
+
+    <!-- div#meu-id-$.minha-classe-$.outra-classe-${conteudo}*3 -->
+    <div id="meu-id-1" class="minha-classe-1 outra-classe-1">conteudo</div>
+    <div id="meu-id-2" class="minha-classe-2 outra-classe-2">conteudo</div>
+    <div id="meu-id-3" class="minha-classe-3 outra-classe-3">conteudo</div>
+
+    <!-- ul>li{conteudo $}*3 -->
+    <ul>
+        <li>conteudo 1</li>
+        <li>conteudo 2</li>
+        <li>conteudo 3</li>
+    </ul>
+    <!-- ul>(li>a{conteudo $})*3 -->
+    <ul>
+        <li><a href="">conteudo 1</a></li>
+        <li><a href="">conteudo 2</a></li>
+        <li><a href="">conteudo 3</a></li>
+    </ul>
+
+    <!-- ul>(li>a{conteudo $}[href="https://www.google.com.br/-$"])*3 -->
+    <ul>
+        <li><a href="https://www.google.com.br/-1">conteudo 1</a></li>
+        <li><a href="https://www.google.com.br/-2">conteudo 2</a></li>
+        <li><a href="https://www.google.com.br/-3">conteudo 3</a></li>
+    </ul>
+
+
+
+    
+</body>
+</html>
