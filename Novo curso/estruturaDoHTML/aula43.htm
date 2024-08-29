@@ -4,6 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmet Abbreviation</title>
+    <style>
+        body {
+            width: 100%; /*w100p*/
+            height: 100vh; /*h100vh*/
+            margin: 10rem; /*m10rem*/
+            padding: 10%;  /*p10p*/
+            display: flex; /*df*/
+            display: grid; /*dg*/
+            display: none; /*dn*/
+            display: block; /*db*/
+            background: #000; /*bg*/
+            background-color: #fff; /*bc*/
+            background-image: url(); /*bgi*/
+            position: absolute; /*posa*/
+            top: 10rem; /*t10rem*/
+            bottom: 10rem; /*b10rem*/
+            right: 10rem; /*r10rem*/
+            left: 10rem;  /*l10rem*/
+            float: left; /*fl*/
+            box-sizing: border-box; /*bxz*/
+
+
+
+
+
+
+
+
+        }
+    </style>
 </head>
 <body>
     <!-- div.classe-um.classe-dois -->
@@ -42,6 +72,24 @@
         <li><a href="https://www.google.com.br/-2">conteudo 2</a></li>
         <li><a href="https://www.google.com.br/-3">conteudo 3</a></li>
     </ul>
+
+
+    <!-- div.minha-classe#>h1{conteudo do h1}+(p{conteudo do paragrafo}>a{click aqui}[href=www.google.com.br]+{continuando o paragrafo})*2 -->
+    <div class="minha-classe" id="">
+        <h1>conteudo do h1</h1>
+        <p>conteudo do paragrafo<a href="www.google.com.br">click aqui</a>continuando o paragrafo</p>
+        <p>conteudo do paragrafo<a href="www.google.com.br">click aqui</a>continuando o paragrafo</p>
+    </div>
+
+    <!-- section>h1+div>(p>span)*2 -->
+     <!-- section>h1{conteudo}+div>(p{conteudo do p}>span{conteudo do span}+{conteudo do paragrafo parte 2})*2 -->
+    <section>
+        <h1>conteudo</h1>
+        <div>
+            <p>conteudo do p<span>conteudo do span</span>conteudo do paragrafo parte 2</p>
+            <p>conteudo do p<span>conteudo do span</span>conteudo do paragrafo parte 2</p>
+        </div>
+    </section>
 
 
 
